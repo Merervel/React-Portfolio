@@ -1,0 +1,89 @@
+@import "../../vars.css";
+
+.whiteMode {
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+  
+  .whiteModeLabel {
+    width: 65px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: #0b2447;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+                inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+    margin-left: 12px;
+  }
+  
+  .whiteModeLabel:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    z-index: 1;
+    
+  }
+  
+  .WhiteModeInput {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  .WhiteModeInput:checked + .whiteModeLabel {
+    background: rgba(50, 120, 190, 0.25);
+  }
+  
+  .WhiteModeInput:checked + .whiteModeLabel:after {
+    left: 62px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+  }
+  
+  .whiteModeLabel:active:after {
+    width: 30px;
+  }
+  
+  .whiteModeLabel img {
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    z-index: 2;
+    transition: 0.6s;
+  }
+  
+  .sun {
+    left: 40px;
+    filter: brightness(1); 
+  }
+  
+  .moon {
+    left: 5px;
+    filter: brightness(0.4); 
+  }
+  
+  /* Saat white mode aktif */
+  .WhiteModeInput:checked + .whiteModeLabel .sun {
+    filter: brightness(0.4); 
+  }
+  
+  .WhiteModeInput:checked + .whiteModeLabel .moon {
+    filter: brightness(1);   
+  }
+
+  @media screen and (max-width: 830px) {
+   .whiteMode{
+    margin-right: 20px;
+   }
+  }

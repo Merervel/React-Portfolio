@@ -1,0 +1,21 @@
+:root{
+    /* Colours */
+    --color-text: #fff;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+
+[data-theme="white"]{
+        --color-text: #1c1c1e;
+        --color-primary: #3b6efb;
+        --color-secondary: #c3d2f3;
+        --color-dark: #f4f4f7;
+        --color-bg: rgba(50, 120, 190, 0.25);
+        
+ }
+
+    /* fonts */
+
+    --font-robot: "roboto";
+}
