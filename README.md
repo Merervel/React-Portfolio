@@ -31,7 +31,9 @@ npm install
 # Jalankan project
 npm run dev
 
+```
 ## 🙏 Credit
 
 Project ini dibuat berdasarkan tutorial dari [Nama Channel YouTube](https://youtu.be/YQCDUJ6hhNY?si=pCXBLLT5lS--Y35k).  
 Saya mengembangkan beberapa bagian, menambahkan dark mode, dan menyesuaikan isi dengan portfolio pribadi saya.
+
