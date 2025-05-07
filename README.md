@@ -1,12 +1,32 @@
-# React + Vite
+# 🧑‍💻 React Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ini adalah website portofolio pribadi yang dibuat menggunakan React dan Vite. Website ini menampilkan informasi tentang saya, pengalaman, proyek, serta menyediakan fitur kontak dan dark mode.
 
-Currently, two official plugins are available:
+## 📄 Fitur
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Halaman profil pribadi: Home, About, Experience, Projects, Contact
+- Navigasi antar bagian
+- Dark mode toggle
+- Responsive design
+- Struktur komponen modular
 
-## Expanding the ESLint configuration
+## 🗂️ Struktur Folder
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `public/assets/`: Berisi gambar, icon, dan favicon
+- `src/components/`: Komponen seperti Navbar, Hero, About, Experience, Project, Contact
+- `src/data/`: Berisi data untuk konten
+
+## 🚀 Cara Instalasi dan Menjalankan
+
+```bash
+# Inisialisasi proyek (jika belum)
+npm create vite@latest
+
+# Masuk ke folder proyek
+cd react-portfolio
+
+# Install dependencies
+npm install
+
+# Jalankan project
+npm run dev
